@@ -1,0 +1,42 @@
+name: pyds
+channels:
+  - ranaroussi
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - black
+  - bokeh
+  - holoviews
+  - hvplot
+  - jedi
+  - jupyterlab
+  - keras
+  - lxml
+  - markdown
+  - matplotlib
+  - numpy
+  - pandas
+  - pandas-datareader
+  - pylint
+  - python=3.6.10.*
+  - scikit-image
+  - scikit-learn
+  - scipy
+  - seaborn
+  - sqlite
+  - statsmodels
+  - tensorflow
+  - xlrd
+  - spyder
+  - django
+  - plotly
+  - cufflinks
+  - kaggle
+  - mkl-service
+  - pip:
+      - covid19py
+      - cython
+      - jupytext
+      - mglearn
+      - pynvim
