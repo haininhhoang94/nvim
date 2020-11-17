@@ -6,6 +6,7 @@ channels:
   - defaults
 dependencies:
   - black
+  - mkl-service
   - bokeh
   - holoviews
   - hvplot
@@ -33,7 +34,6 @@ dependencies:
   - plotly
   - cufflinks
   - kaggle
-  - mkl-service
   - pip:
       - covid19py
       - cython
