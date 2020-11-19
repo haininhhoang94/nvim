@@ -77,14 +77,14 @@ command! -complete=file -nargs=? Vnew call <SID>split('v', '__vscode_new__')
 command! -bang Only if <q-bang> == '!' | call <SID>closeOtherEditors() | else | call VSCodeNotify('workbench.action.joinAllGroups') | endif
 
 " Better Navigation
-nnoremap <silent> <C-j> :call VSCodeNotify('workbench.action.navigateDown')<CR>
-xnoremap <silent> <C-j> :call VSCodeNotify('workbench.action.navigateDown')<CR>
-nnoremap <silent> <C-k> :call VSCodeNotify('workbench.action.navigateUp')<CR>
-xnoremap <silent> <C-k> :call VSCodeNotify('workbench.action.navigateUp')<CR>
-nnoremap <silent> <C-h> :call VSCodeNotify('workbench.action.navigateLeft')<CR>
-xnoremap <silent> <C-h> :call VSCodeNotify('workbench.action.navigateLeft')<CR>
-nnoremap <silent> <C-l> :call VSCodeNotify('workbench.action.navigateRight')<CR>
-xnoremap <silent> <C-l> :call VSCodeNotify('workbench.action.navigateRight')<CR>
+" nnoremap <silent> <C-j> :call VSCodeNotify('workbench.action.navigateDown')<CR>
+" xnoremap <silent> <C-j> :call VSCodeNotify('workbench.action.navigateDown')<CR>
+" nnoremap <silent> <C-k> :call VSCodeNotify('workbench.action.navigateUp')<CR>
+" xnoremap <silent> <C-k> :call VSCodeNotify('workbench.action.navigateUp')<CR>
+" nnoremap <silent> <C-h> :call VSCodeNotify('workbench.action.navigateLeft')<CR>
+" xnoremap <silent> <C-h> :call VSCodeNotify('workbench.action.navigateLeft')<CR>
+" nnoremap <silent> <C-l> :call VSCodeNotify('workbench.action.navigateRight')<CR>
+" xnoremap <silent> <C-l> :call VSCodeNotify('workbench.action.navigateRight')<CR>
 
 nnoremap gr <Cmd>call VSCodeNotify('editor.action.goToReferences')<CR>
 
@@ -118,4 +118,4 @@ omap gc  <Plug>VSCodeCommentary
 nmap gcc <Plug>VSCodeCommentaryLine
 
 " To follow file
-nmap gf  call VSCodeNotify('seito-openfile.openFileFromText')<CR>
+nnoremap gf <Cmd> call VSCodeNotify('seito-openfile.openFileFromText')<CR>
