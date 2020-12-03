@@ -21,10 +21,6 @@ if exists('g:vscode')
   source ~/AppData/Local/nvim/vscode/settings.vim
   source ~/AppData/Local/nvim/plug-config/easymotion.vim
   source ~/AppData/Local/nvim/plug-config/highlightyank.vim
-else
-  " Themes
-  source ~/AppData/Local/nvim/themes/syntax.vim
-  source ~/AppData/Local/nvim/themes/nvcode.vim
 endif
 
 " Add paths to node and python here
