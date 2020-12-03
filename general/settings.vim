@@ -1,7 +1,7 @@
 set iskeyword+=-                                                                " treat dash separated words as a word text object
 
 set formatoptions-=cro                                                          " Stop newline continution of comments
-let g:python3_host_prog = expand('$HOME/anaconda3/envs/pyds/bin/python3.6')     " Python location
+" let g:python3_host_prog = expand('$HOME/anaconda3/envs/pyds/bin/python3.6')     " Python location
 
 syntax enable               " Enables syntax highlighting
 set hidden                  " Required to keep multiple buffers open multiple buffers
