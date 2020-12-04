@@ -118,4 +118,4 @@ omap gc  <Plug>VSCodeCommentary
 nmap gcc <Plug>VSCodeCommentaryLine
 
 " To follow file
-nnoremap gf <Cmd> call VSCodeNotify('seito-openfile.openFileFromText')<CR>
+nmap gf <Cmd>call VSCodeNotify('seito-openfile.openFileFromText')<CR>
