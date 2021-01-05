@@ -17,6 +17,21 @@ call plug#begin('~/AppData/Local/nvim/autoload/plugged')
         " Easy motion for VSCode
         Plug 'asvetliakov/vim-easymotion'
         Plug 'machakann/vim-highlightedyank'
+    else
+        " Sneak
+        Plug 'justinmk/vim-sneak'
+        " Surround
+        Plug 'tpope/vim-surround'
+        " Files
+        Plug 'tpope/vim-eunuch'
+        " Have the file system follow you around
+        Plug 'airblade/vim-rooter'
+        " auto set indent setting
+        Plug 'tpope/vim-sleuth'
+        " Better Syntax Support
+        " Plug 'nvim-treesitter/nvim-treesitter'
+        Plug 'sheerun/vim-polyglot'
+
     endif
 
 "Add Plug end here
