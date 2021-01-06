@@ -39,6 +39,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         " Better Syntax Support
         " Plug 'nvim-treesitter/nvim-treesitter'
         Plug 'sheerun/vim-polyglot'
+        " Treesitter
+        Plug 'nvim-treesitter/nvim-treesitter'
+        Plug 'nvim-treesitter/nvim-treesitter-refactor'
+        Plug 'nvim-treesitter/nvim-treesitter-textobjects'
+        Plug 'nvim-treesitter/playground'
+        Plug 'romgrk/nvim-treesitter-context'
         " Cool Icons
         Plug 'ryanoasis/vim-devicons'
         " Auto pairs for '(' '[' '{'
