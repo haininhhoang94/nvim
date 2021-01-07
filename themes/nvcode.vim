@@ -10,12 +10,14 @@
 "autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white }) " `bg` will not be styled since there is no `bg` setting
 
 hi Comment cterm=italic
-let g:nvcode_hide_endofbuffer=1
-let g:nvcode_terminal_italics=1
 let g:nvcode_termcolors=256
 
 syntax on
+" colorscheme nord
 colorscheme nvcode
+" colorscheme onedark
+" colorscheme TSnazzy
+" colorscheme aurora
 
 " checks if your terminal has 24-bit color support
 if (has("termguicolors"))

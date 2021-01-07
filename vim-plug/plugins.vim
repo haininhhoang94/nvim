@@ -23,15 +23,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     if exists('g:vscode')
         " Easy motion for VSCode
-        Plug 'asvetliakov/vim-easymotion'
+        " Plug 'asvetliakov/vim-easymotion'
+        Plug 'ChristianChiarulli/vscode-easymotion'
         Plug 'machakann/vim-highlightedyank'
     else
-        " Sneak
-        Plug 'justinmk/vim-sneak'
+
+        " Easymotion
+        Plug 'easymotion/vim-easymotion'
         " Surround
         Plug 'tpope/vim-surround'
-        " Files
-        Plug 'tpope/vim-eunuch'
         " Have the file system follow you around
         Plug 'airblade/vim-rooter'
         " auto set indent setting
@@ -41,11 +41,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'sheerun/vim-polyglot'
         " Treesitter
         Plug 'nvim-treesitter/nvim-treesitter'
-        Plug 'nvim-treesitter/nvim-treesitter-refactor'
-        Plug 'nvim-treesitter/nvim-treesitter-textobjects'
         Plug 'nvim-treesitter/playground'
-        Plug 'romgrk/nvim-treesitter-context'
         " Cool Icons
+        Plug 'kyazdani42/nvim-web-devicons'
         Plug 'ryanoasis/vim-devicons'
         " Auto pairs for '(' '[' '{'
         Plug 'jiangmiao/auto-pairs'
@@ -54,16 +52,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         " Themes
         Plug 'christianchiarulli/nvcode-color-schemes.vim'
         " Plug 'kyazdani42/blue-moon'
-        Plug 'NLKNguyen/papercolor-theme'
-        Plug 'morhetz/gruvbox'
-        Plug 'phanviet/vim-monokai-pro'
+        " Plug 'NLKNguyen/papercolor-theme'
+        " Plug 'morhetz/gruvbox'
+        " Plug 'phanviet/vim-monokai-pro'
         " Intellisense
         Plug 'neoclide/coc.nvim', {'branch': 'release'}
-        Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
         " Status Line
-        Plug 'vim-airline/vim-airline'
-        Plug 'vim-airline/vim-airline-themes'
-        Plug 'Yavor-Ivanov/airline-monokai-subtle.vim'
+        Plug 'glepnir/galaxyline.nvim'
         " Ranger
         Plug 'kevinhwang91/rnvimr'
         "fzf
@@ -90,22 +85,19 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'mattn/emmet-vim'
         " Interactive code
         Plug 'metakirby5/codi.vim'
-        " Debugging
-        " Plug 'puremourning/vimspector'
         " Better tabline
-        Plug 'mg979/vim-xtabline'
+        Plug 'romgrk/barbar.nvim'
         " undo time travel
         Plug 'mbbill/undotree'
         " Find and replace
         Plug 'ChristianChiarulli/far.vim'
-        " Plug 'brooth/far.vim'
         " Auto change html tags
         Plug 'AndrewRadev/tagalong.vim'
         " live server
         Plug 'turbio/bracey.vim'
         " Smooth scroll
         Plug 'psliwka/vim-smoothie'
-        " asynt tasks
+        " async tasks
         Plug 'skywind3000/asynctasks.vim'
         Plug 'skywind3000/asyncrun.vim'
         " Swap windows
@@ -117,57 +109,72 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'mattn/webapi-vim'
         " Colorizer
         Plug 'norcalli/nvim-colorizer.lua'
+        " Intuitive buffer closing
+        Plug 'moll/vim-bbye'
+        " Auto refresh
+        Plug 'djoshea/vim-autoread'
         " Rainbow
         " Plug 'luochen1990/rainbow'
         " Async Linting Engine
         " TODO make sure to add ale config before plugin
         " Plug 'dense-analysis/ale'
         " Better Whitespace
-        Plug 'ntpeters/vim-better-whitespace'
+        " Plug 'ntpeters/vim-better-whitespace'
         " Multiple Cursors
         " TODO add this back in change from C-n
         " Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-        Plug 'moll/vim-bbye'
         " Plug 'yuezk/vim-js'
         " Plug 'maxmellon/vim-jsx-pretty'
         " Plug 'jelera/vim-javascript-syntax'
         " Python jupyter
-        Plug 'goerz/jupytext.vim'
-        " Auto refresh
-        Plug 'djoshea/vim-autoread'
+        " Plug 'goerz/jupytext.vim'
 
-		" Plugin Graveyard
+        " Plugin Graveyard
 
-		" Typescript syntax
-		" Plug 'HerringtonDarkholme/yats.vim'
-		" Multiple Cursors
-		" Plug 'terryma/vim-multiple-cursors'
-		" Async Linting Engine
-		" Plug 'kaicataldo/material.vim'
-		" Plug 'NLKNguyen/papercolor-theme'
-		" Plug 'tomasiser/vim-code-dark'
-		" Vim Wiki
-		" Plug 'https://github.com/vimwiki/vimwiki.git'
-		" Better Comments
-		" Plug 'jbgutierrez/vim-better-comments'
-		" Echo doc
-		" Plug 'Shougo/echodoc.vim'
-		" Plug 'hardcoreplayers/spaceline.vim'
-		" Plug 'vim-airline/vim-airline-themes'
+        " Debug
+        " Plug 'mfussenegger/nvim-dap'
+        " Plug 'nvim-dap-virtual-text'
+        " Sneak
+        " Plug 'justinmk/vim-sneak'
+        " Files
+        " Plug 'tpope/vim-eunuch'
+        " Plug 'nvim-treesitter/nvim-treesitter-refactor'
+        " Plug 'nvim-treesitter/nvim-treesitter-textobjects'
+        " Plug 'romgrk/nvim-treesitter-context'
+        " Minimap
+        " Plug 'wfxr/minimap.vim'
+        " Plug 'romgrk/lib.kom'
+        " Plug 'brooth/far.vim'
+        " Typescript syntax
+        " Plug 'HerringtonDarkholme/yats.vim'
+        " Multiple Cursors
+        " Plug 'terryma/vim-multiple-cursors'
+        " Async Linting Engine
+        " Plug 'tomasiser/vim-code-dark'
+        " Plug 'mg979/vim-xtabline'
+        " Vim Wiki
+        " Plug 'https://github.com/vimwiki/vimwiki.git'
+        " Better Comments
+        " Plug 'jbgutierrez/vim-better-comments'
+        " Echo doc
+        " Plug 'Shougo/echodoc.vim'
+        " Plug 'hardcoreplayers/spaceline.vim'
+        " Plug 'vim-airline/vim-airline-themes'
         " Plug 'kaicataldo/material.vim', { 'branch': 'main' }
-        " Plug 'arcticicestudio/nord-vim'
-		" Ranger
-		" Plug 'francoiscabrol/ranger.vim'
-		" Plug 'rbgrouleff/bclose.vim'
-		" Making stuff
-		" Plug 'neomake/neomake'
-		" Plug 'mhinz/vim-signify'
-		" Plug 'easymotion/vim-easymotion'
-		" Plug 'preservim/nerdcommenter'
-		" Plug 'atishay/far.vim'
-		" Combine with Tmux
-		" Plug 'christoomey/vim-tmux-navigator'
-		" Plug 'cjrh/vim-conda'
+        " Ranger
+        " Plug 'francoiscabrol/ranger.vim'
+        " Plug 'rbgrouleff/bclose.vim'
+        " Making stuff
+        " Plug 'neomake/neomake'
+        " Plug 'mhinz/vim-signify'
+        " Plug 'preservim/nerdcommenter'
+        " Plug 'atishay/far.vim'
+        " Combine with Tmux
+        " Plug 'christoomey/vim-tmux-navigator'
+        " Plug 'cjrh/vim-conda'
+        " Debugging
+        " Plug 'puremourning/vimspector'
+        " Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
       endif
 
 "Add Plug end here

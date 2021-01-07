@@ -16,8 +16,9 @@
   // "diagnostic.displayByAle": true,
   // "diagnostic.virtualText": true, // this won't work with codelens when error on same line
 
-  // codelens TODO what does this get me?
-  // "codeLens.enable": true,
+  // codelens
+  "codeLens.enable": true,
+  "java.referencesCodeLens.enabled": true,
 
   // list
   "list.indicator": ">",
@@ -64,7 +65,8 @@
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": false,
   "explorer.icon.enableVimDevicons": false,
-  "explorer.keyMappings": {
+  "explorer.file.showHiddenFiles": false,
+  "explorer.keyMappings.global": {
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit",
     "l": ["expandable?", "expand", "preview:labeling"]

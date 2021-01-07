@@ -38,7 +38,7 @@ let g:airline#extensions#default#layout = [['a', 'b', 'c'], ['x', 'z', 'warning'
 
 
 " Switch to your current theme
-" let g:airline_theme = 'onedark'
+let g:airline_theme = 'one'
 
 " Always show tabs
 set showtabline=2

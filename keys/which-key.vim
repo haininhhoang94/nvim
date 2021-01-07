@@ -36,11 +36,12 @@ let g:which_key_map['='] = [ '<C-W>='                       , 'balance windows' 
 let g:which_key_map['e'] = [ ':CocCommand explorer'         , 'explorer' ]
 let g:which_key_map['h'] = [ '<C-W>s'                       , 'split below']
 let g:which_key_map['m'] = [ ':call WindowSwap#EasyWindowSwap()'  , 'move window'  ]
-" let g:which_key_map['n'] = [ ':let @/ = ""'                       , 'no highlight'  ]
-let g:which_key_map['n'] = [ ':enew'                        , 'new file'  ]
+let g:which_key_map['n'] = [ ':let @/ = ""'                       , 'no highlight'  ]
+let g:which_key_map['N'] = [ ':enew'                        , 'new file'  ]
 " let g:which_key_map['p'] = [ ':Files'                       , 'search files' ]
 let g:which_key_map['q'] = [ 'q'                            , 'quit' ]
 let g:which_key_map['r'] = [ ':RnvimrToggle'                , 'ranger' ]
+let g:which_key_map['T'] = [ ':TSHighlightCapturesUnderCursor'    , 'treesitter highlight' ]
 let g:which_key_map['u'] = [ ':UndotreeToggle'              , 'undo tree']
 let g:which_key_map['v'] = [ '<C-W>v'                       , 'split right']
 let g:which_key_map['W'] = [ 'w'                            , 'write' ]
@@ -82,7 +83,7 @@ let g:which_key_map.a = {
       \ 'p' : [':set paste!'             , 'toggle paste mode'],
       \ 'w' : [':StripWhitespace'        , 'strip whitespace'],
       \ '.' : [':set nospell!'           , 'toggle spell check'],
-      \ 'h' : [':cd %:h'                 , 'set current path'],
+      \ 'P' : [':cd %:h'                 , 'set current path'],
       \ 'q' : [':set list!'              , 'toggle dot space'],
       \ }
       " \ 'r' : [ ':Semshi rename'         , 'Semshi Rename'],
@@ -97,15 +98,27 @@ let g:which_key_map.p = {
 " b is for buffer
 let g:which_key_map.b = {
       \ 'name' : 'buffer' ,
-      \ '1' : ['b1'        , 'buffer 1'],
-      \ '2' : ['b2'        , 'buffer 2'],
-      \ 'd' : [':Bdelete'  , 'delete-buffer'],
-      \ 'f' : ['bfirst'    , 'first-buffer'],
-      \ 'h' : ['Startify'  , 'home-buffer'],
-      \ 'l' : ['blast'     , 'last-buffer'],
-      \ 'n' : ['bnext'     , 'next-buffer'],
-      \ 'p' : ['bprevious' , 'previous-buffer'],
-      \ '?' : ['Buffers'   , 'fzf-buffer'],
+      \ '>' : [':BufferMoveNext'        , 'move next'],
+      \ '<' : [':BufferMovePrevious'    , 'move prev'],
+      \ '1' : [':BufferGoto 1'          , 'buffer 1'],
+      \ '2' : [':BufferGoto 2'          , 'buffer 2'],
+      \ '3' : [':BufferGoto 3'          , 'buffer 3'],
+      \ '4' : [':BufferGoto 4'          , 'buffer 4'],
+      \ '5' : [':BufferGoto 5'          , 'buffer 5'],
+      \ '6' : [':BufferGoto 6'          , 'buffer 6'],
+      \ '7' : [':BufferGoto 7'          , 'buffer 7'],
+      \ '8' : [':BufferGoto 8'          , 'buffer 8'],
+      \ '9' : [':BufferGoto 9'          , 'buffer 9'],
+      \ '0' : [':BufferGoto 0'          , 'buffer 0'],
+      \ 'b' : [':BufferPick'            , 'pick buffer'],
+      \ 'd' : [':Bdelete'               , 'delete-buffer'],
+      \ 'D' : [':BufferOrderByDirectory', 'order by directory'],
+      \ 'f' : ['bfirst'                 , 'first-buffer'],
+      \ 'l' : ['blast'                  , 'last buffer'],
+      \ 'L' : [':BufferOrderByLanguage' , 'order by language'],
+      \ 'n' : ['bnext'                  , 'next-buffer'],
+      \ 'p' : ['bprevious'              , 'previous-buffer'],
+      \ '?' : ['Buffers'                , 'fzf-buffer'],
       \ }
 
 let g:which_key_map.f = {
@@ -274,22 +287,22 @@ let g:which_key_map.t = {
       \ }
 
 " T is for terminal
-let g:which_key_map.T = {
-      \ 'name' : '+tabline' ,
-      \ 'b' : [':XTabListBuffers'         , 'list buffers'],
-      \ 'd' : [':XTabCloseBuffer'         , 'close buffer'],
-      \ 'D' : [':XTabDeleteTab'           , 'close tab'],
-      \ 'h' : [':XTabHideBuffer'          , 'hide buffer'],
-      \ 'i' : [':XTabInfo'                , 'info'],
-      \ 'l' : [':XTabLock'                , 'lock tab'],
-      \ 'm' : [':XTabMode'                , 'toggle mode'],
-      \ 'n' : [':tabNext'                 , 'next tab'],
-      \ 'N' : [':XTabMoveBufferNext'      , 'buffer->'],
-      \ 't' : [':tabnew'                  , 'new tab'],
-      \ 'p' : [':tabprevious'             , 'prev tab'],
-      \ 'P' : [':XTabMoveBufferPrev'      , '<-buffer'],
-      \ 'x' : [':XTabPinBuffer'           , 'pin buffer'],
-      \ }
+" let g:which_key_map.T = {
+"       \ 'name' : '+tabline' ,
+"       \ 'b' : [':XTabListBuffers'         , 'list buffers'],
+"       \ 'd' : [':XTabCloseBuffer'         , 'close buffer'],
+"       \ 'D' : [':XTabDeleteTab'           , 'close tab'],
+"       \ 'h' : [':XTabHideBuffer'          , 'hide buffer'],
+"       \ 'i' : [':XTabInfo'                , 'info'],
+"       \ 'l' : [':XTabLock'                , 'lock tab'],
+"       \ 'm' : [':XTabMode'                , 'toggle mode'],
+"       \ 'n' : [':tabNext'                 , 'next tab'],
+"       \ 'N' : [':XTabMoveBufferNext'      , 'buffer->'],
+"       \ 't' : [':tabnew'                  , 'new tab'],
+"       \ 'p' : [':tabprevious'             , 'prev tab'],
+"       \ 'P' : [':XTabMoveBufferPrev'      , '<-buffer'],
+"       \ 'x' : [':XTabPinBuffer'           , 'pin buffer'],
+"       \ }
 
 " w is for wiki
 let g:which_key_map.w = {
