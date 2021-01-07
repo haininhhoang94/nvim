@@ -34,7 +34,7 @@ let g:startify_bookmarks = [
             \ '/mnt/d/Google Drive/personal_wiki/README.md',
             \ '/etc/apt/sources.list',
             \ '/mnt/d/Google Drive/Projects/wqu',
-            \ '~/Pics',
+            \ '/mnt/d/Google_Drive/Projects/Reservoir/geostatistic/README.md',
             \ ]
             " \ { 'i': '~/.config/nvim/init.vim' },
             " \ { 'z': '~/.zshrc' },
