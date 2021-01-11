@@ -35,6 +35,7 @@ let g:startify_bookmarks = [
             \ '/etc/apt/sources.list',
             \ '/mnt/d/Google Drive/Projects/wqu',
             \ '/mnt/d/Google_Drive/Projects/Reservoir/geostatistic/README.md',
+            \ '/mnt/d/Google_Drive/Projects/Setup/wsl_dev_env',
             \ ]
             " \ { 'i': '~/.config/nvim/init.vim' },
             " \ { 'z': '~/.zshrc' },
