@@ -105,6 +105,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'wesQ3/vim-windowswap'
         " Markdown Preview
         Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
+        " Markdown Image Paste
+        Plug 'ferrine/md-img-paste.vim'
         " Easily Create Gists
         Plug 'mattn/vim-gist'
         Plug 'mattn/webapi-vim'

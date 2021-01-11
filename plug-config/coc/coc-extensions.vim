@@ -31,6 +31,7 @@ let g:coc_global_extensions = [
     \ 'coc-r-lsp',
     \ 'coc-calc',
     \ 'coc-omnisharp',
+    \ 'coc-vimtex',
     \ ]
     " \ 'coc-tabnine',
     " \ 'coc-highlight',

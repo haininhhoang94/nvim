@@ -101,8 +101,10 @@ let g:which_key_map.a = {
 " p -> finding files (to be alike with my vscode config)
 let g:which_key_map.p = {
       \ 'name' : 'find' ,
-      \ 'p' : [':Files'        , 'find file'],
+      \ 'p' : [':call mdip#MarkdownClipboardImage()'        , 'Insert Image'],
       \ }
+      " \ 'p' : [':Files'        , 'find file'],
+      " TODO
 
 " b is for buffer
 let g:which_key_map.b = {
