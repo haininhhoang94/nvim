@@ -53,11 +53,14 @@ let g:which_key_map['.'] = {
       \ 'name' : 'open setting' ,
       \ '.' : [ ':e $MYVIMRC'               , 'Neovim Setting' ],
       \ 'a' : [ ':e ~/.aliases'               , 'Aliases' ],
+      \ 'c' : [ ':e ~/.environment-pyds.yml'          , 'Conda Environment Setting'],
       \ 'C' : [ ':e ~/.code-shell'          , 'VSCode Shell Setting'],
       \ 'r' : [ ':e ~/.vscode-server/data/Machine/settings.json' , 'VSCode WSL Setting'],
+      \ 'w' : [ ':e /mnt/c/Users/hainh/AppData/Local/nvim/init.vim' , 'Neovim Windows Setting'],
+      \ 'W' : [ ':e /mnt/c/Users/hainh/AppData/Local/Packages/Microsoft.WindowsTerminal*/LocalState/settings.json' , 'Windows Terminal Setting'],
+      \ 't' : [ ':e ~/.tmux.conf'               , 'Tmux Setting'],
       \ 'z' : [ ':e ~/.zshrc'               , 'ZSH Setting'],
       \ }
-
 " c is for Codi
 
 let g:which_key_map.c = {      
@@ -99,12 +102,22 @@ let g:which_key_map.a = {
       " \ 'e' : [ ':Semshi error'          , 'Semshi Error'],
 
 " p -> finding files (to be alike with my vscode config)
+" let g:which_key_map.p = {
+"       \ 'name' : 'find' ,
+"       \ 'p' : [':call mdip#MarkdownClipboardImage()'        , 'Insert Image'],
+"       \ }
+"       " \ 'p' : [':Files'        , 'find file'],
+"       " TODO
+
+" p -> Slime
 let g:which_key_map.p = {
-      \ 'name' : 'find' ,
-      \ 'p' : [':call mdip#MarkdownClipboardImage()'        , 'Insert Image'],
+      \ 'name' : 'Slime' ,
+      \ 'v' : ['<Plug>SlimeConfig'        , 'Config'],
+      \ 'f' : ['<Plug>SlimeParagraphSend}}{j'        , 'Send Paragraph'],
+      \ 'l' : ['<S-v><Plug>SlimeRegionSend'        , 'Send Line'],
       \ }
-      " \ 'p' : [':Files'        , 'find file'],
-      " TODO
+"       " \ 'p' : [':Files'        , 'find file'],
+"       " TODO
 
 " b is for buffer
 let g:which_key_map.b = {

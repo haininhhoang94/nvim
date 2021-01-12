@@ -51,10 +51,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'alvan/vim-closetag'
         " Themes
         Plug 'christianchiarulli/nvcode-color-schemes.vim'
-        " Plug 'kyazdani42/blue-moon'
-        " Plug 'NLKNguyen/papercolor-theme'
-        " Plug 'morhetz/gruvbox'
-        " Plug 'phanviet/vim-monokai-pro'
         " Intellisense
         Plug 'neoclide/coc.nvim', {'branch': 'release'}
         " Status Line
@@ -86,6 +82,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'mattn/emmet-vim'
         " Interactive code
         Plug 'metakirby5/codi.vim'
+        " REPL forwarding
+        Plug 'jpalardy/vim-slime'
         " Better tabline
         Plug 'romgrk/barbar.nvim'
         " undo time travel
@@ -178,6 +176,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         " Debugging
         " Plug 'puremourning/vimspector'
         " Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+        " Themes
+        " Plug 'kyazdani42/blue-moon'
+        " Plug 'NLKNguyen/papercolor-theme'
+        " Plug 'morhetz/gruvbox'
+        " Plug 'phanviet/vim-monokai-pro'
       endif
 
 "Add Plug end here
