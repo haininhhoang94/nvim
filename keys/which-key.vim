@@ -98,8 +98,6 @@ let g:which_key_map.a = {
       \ 'P' : [':cd %:h'                 , 'set current path'],
       \ 'q' : [':set list!'              , 'toggle dot space'],
       \ }
-      " \ 'r' : [ ':Semshi rename'         , 'Semshi Rename'],
-      " \ 'e' : [ ':Semshi error'          , 'Semshi Error'],
 
 " p -> finding files (to be alike with my vscode config)
 " let g:which_key_map.p = {
@@ -114,7 +112,7 @@ let g:which_key_map.p = {
       \ 'name' : 'Slime' ,
       \ 'v' : ['<Plug>SlimeConfig'        , 'Config'],
       \ 'f' : ['<Plug>SlimeParagraphSend}}{j'        , 'Send Paragraph'],
-      \ 'l' : ['<S-v><Plug>SlimeRegionSend'        , 'Send Line'],
+      \ 'l' : ['<Plug>SlimeRegionSendj'        , 'Send Line'],
       \ }
 "       " \ 'p' : [':Files'        , 'find file'],
 "       " TODO
