@@ -33,6 +33,7 @@ else
   source $HOME/.config/nvim/plug-config/better-whitespace.vim
   source $HOME/.config/nvim/plug-config/fzf.vim
   source $HOME/.config/nvim/plug-config/codi.vim
+  source $HOME/.config/nvim/plug-config/vim-slime.vim
   luafile $HOME/.config/nvim/lua/nvcodeline.lua
   luafile $HOME/.config/nvim/lua/treesitter.lua
   source $HOME/.config/nvim/plug-config/coc/coc.vim
