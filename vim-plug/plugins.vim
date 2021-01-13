@@ -31,6 +31,51 @@ call plug#begin('~/AppData/Local/nvim/autoload/plugged')
         " Better Syntax Support
         " Plug 'nvim-treesitter/nvim-treesitter'
         Plug 'sheerun/vim-polyglot'
+        " Cool Icons
+        Plug 'ryanoasis/vim-devicons'
+        " Auto pairs for '(' '[' '{'
+        Plug 'jiangmiao/auto-pairs'
+        " Closetags
+        Plug 'alvan/vim-closetag'
+        " Themes
+        " Plug 'christianchiarulli/nvcode.vim'
+        " Themes
+        Plug 'christianchiarulli/nvcode-color-schemes.vim'
+        " Plug 'ChristianChiarulli/nv-code'
+        " Plug 'kyazdani42/blue-moon'
+        Plug 'NLKNguyen/papercolor-theme'
+        Plug 'morhetz/gruvbox'
+        Plug 'phanviet/vim-monokai-pro'
+        " Status Line
+        Plug 'vim-airline/vim-airline'
+        Plug 'vim-airline/vim-airline-themes'
+        Plug 'Yavor-Ivanov/airline-monokai-subtle.vim'
+        " Git
+        Plug 'airblade/vim-gitgutter'
+        Plug 'tpope/vim-fugitive'
+        Plug 'tpope/vim-rhubarb'
+        Plug 'junegunn/gv.vim'
+        Plug 'rhysd/git-messenger.vim'
+        " Terminal
+        Plug 'voldikss/vim-floaterm'
+        " Start Screen
+        Plug 'mhinz/vim-startify'
+        " Vista
+        Plug 'liuchengxu/vista.vim'
+        " See what keys do like in emacs
+        Plug 'liuchengxu/vim-which-key'
+        " Zen mode
+        Plug 'junegunn/goyo.vim'
+        " Snippets
+        Plug 'honza/vim-snippets'
+        Plug 'mattn/emmet-vim'
+        Plug 'mg979/vim-xtabline'
+        " Markdown Preview
+        Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
+        " Markdown Image Paste
+        Plug 'ferrine/md-img-paste.vim'
+        " Auto refresh
+        Plug 'djoshea/vim-autoread'
 
     endif
 
