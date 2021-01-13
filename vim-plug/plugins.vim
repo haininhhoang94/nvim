@@ -84,6 +84,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'metakirby5/codi.vim'
         " REPL forwarding
         Plug 'jpalardy/vim-slime'
+        " Combine with Tmux
+        Plug 'christoomey/vim-tmux-navigator'
         " Better tabline
         Plug 'romgrk/barbar.nvim'
         " undo time travel
@@ -170,8 +172,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         " Plug 'mhinz/vim-signify'
         " Plug 'preservim/nerdcommenter'
         " Plug 'atishay/far.vim'
-        " Combine with Tmux
-        " Plug 'christoomey/vim-tmux-navigator'
         " Plug 'cjrh/vim-conda'
         " Debugging
         " Plug 'puremourning/vimspector'

@@ -111,7 +111,7 @@ let g:which_key_map.a = {
 let g:which_key_map.p = {
       \ 'name' : 'Slime' ,
       \ 'v' : ['<Plug>SlimeConfig'        , 'Config'],
-      \ 'f' : ['<Plug>SlimeParagraphSend}}{j'        , 'Send Paragraph'],
+      \ 'p' : ['<Plug>SlimeParagraphSend}}{j'        , 'Send Paragraph'],
       \ 'l' : ['<Plug>SlimeRegionSendj'        , 'Send Line'],
       \ }
 "       " \ 'p' : [':Files'        , 'find file'],
