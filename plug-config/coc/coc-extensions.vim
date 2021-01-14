@@ -16,8 +16,7 @@ let g:coc_global_extensions = [
     \ 'coc-emoji',
     \ 'coc-cssmodules',
     \ 'coc-yaml',
-    \ 'coc-python',
-	\ 'coc-pyright',
+    \ 'coc-pyright',
     \ 'coc-explorer',
     \ 'coc-svg',
     \ 'coc-prettier',
@@ -35,3 +34,4 @@ let g:coc_global_extensions = [
     \ ]
     " \ 'coc-tabnine',
     " \ 'coc-highlight',
+    " \ 'coc-python',
