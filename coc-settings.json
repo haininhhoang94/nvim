@@ -57,7 +57,7 @@
   //"python.analysis.diagnosticSeverityOverrides": {},
   //"python.analysis.typeCheckingMode": "basic",
   //"python.analysis.useLibraryCodeForTypes": true,
-  //"python.pythonPath": "python",
+  "python.pythonPath": "python",
   //"python.venvPath": "",
   //"python.formatting.provider": "black",
   //"python.formatting.blackPath": "black",
