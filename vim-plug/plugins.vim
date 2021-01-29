@@ -12,7 +12,8 @@ call plug#begin('~/AppData/Local/nvim/autoload/plugged')
     Plug 'suy/vim-context-commentstring'
     " highlight all matches under cursor
     " Plug 'RRethy/vim-illuminate'
-
+   " Surround
+    Plug 'tpope/vim-surround'
     " Easy motion for VSCode
     Plug 'asvetliakov/vim-easymotion'
     Plug 'machakann/vim-highlightedyank'

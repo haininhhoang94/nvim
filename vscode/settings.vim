@@ -69,6 +69,7 @@ function! s:openWhichKeyInVisualMode()
     endif
 endfunction
 
+set timeoutlen=100          " By default timeoutlen is 1000 ms => for vim surround to work
 
 command! -complete=file -nargs=? Split call <SID>split('h', <q-args>)
 command! -complete=file -nargs=? Vsplit call <SID>split('v', <q-args>)
