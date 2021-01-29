@@ -15,7 +15,7 @@ if exists('g:vscode')
     nmap <S-TAB> :Tabprev <CR>
 else
     " Refresh source init.vim
-    nmap <leader>rr :so ~/.config/nvim/init.vim<CR>
+    " nmap <leader>rr :so ~/AppData/Local/nvim/init.vim<CR>
 
     " I hate escape more than anything else
     inoremap jk <Esc>
