@@ -13,6 +13,14 @@ if exists('g:vscode')
     " Simulate same TAB behavior in VSCode
     nmap <Tab> :Tabnext <CR>
     nmap <S-TAB> :Tabprev <CR>
+
+    " Insert newline without entering insert mode
+    nmap <C-o> O<Esc>
+    nmap <CR> o<Esc>
+
+    " For next instance to work on windows
+    nmap <n> *
+    nmap <N> #
 else
     " Refresh source init.vim
     " nmap <leader>rr :so ~/AppData/Local/nvim/init.vim<CR>
