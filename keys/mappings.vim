@@ -19,8 +19,8 @@ if exists('g:vscode')
     nmap <CR> o<Esc>
 
     " For next instance to work on windows
-    nmap <n> *
-    nmap <N> #
+    nnoremap n *
+    nnoremap N #
 else
     " Refresh source init.vim
     " nmap <leader>rr :so ~/AppData/Local/nvim/init.vim<CR>
