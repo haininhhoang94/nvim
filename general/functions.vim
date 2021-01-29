@@ -29,18 +29,6 @@ if executable(s:clip)
     augroup END
 endif
 
-" function! OpenLiveServer()
-" 	echo 'live server is on'
-" 	silent !live-server % &
-" endfunction
-
-command Serve :call OpenLiveServer()
-nnoremap <silent>bs :call OpenLiveServer()<CR>
-
-" augroup strip_ws
-"   autocmd BufWritePre * call utils#stripTrailingWhitespaces()
-" augroup END
-
 " If one has a particular extension that one uses for binary files (such as exe,
 " bin, etc), you may find it helpful to automate the process with the following
 " bit of autocmds for your <.vimrc>.  Change that "*.bin" to whatever
