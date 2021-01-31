@@ -56,11 +56,11 @@ let g:which_key_map['.'] = {
       \ 'c' : [ ':e ~/.environment-pyds.yml'          , 'Conda Environment Setting'],
       \ 'C' : [ ':e ~/.code-shell'          , 'VSCode Shell Setting'],
       \ 'r' : [ ':e ~/.vscode-server/data/Machine/settings.json' , 'VSCode WSL Setting'],
-      \ 'w' : [ ':e /mnt/c/Users/hainh/AppData/Local/nvim/init.vim' , 'Neovim Windows Setting'],
-      \ 'W' : [ ':e /mnt/c/Users/hainh/AppData/Local/Packages/Microsoft.WindowsTerminal*/LocalState/settings.json' , 'Windows Terminal Setting'],
       \ 't' : [ ':e ~/.tmux.conf'               , 'Tmux Setting'],
       \ 'z' : [ ':e ~/.zshrc'               , 'ZSH Setting'],
       \ }
+      " \ 'w' : [ ':e $HOME_WINDOWS/AppData/Local/nvim/init.vim' , 'Neovim Windows Setting'],
+      " \ 'W' : [ ':e $HOME_WINDOWS/AppData/Local/Pack' , 'Windows Terminal Setting'],
 " c is for Codi
 
 let g:which_key_map.c = {      

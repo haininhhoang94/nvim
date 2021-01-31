@@ -32,11 +32,9 @@ function! StartifyEntryFormat()
 
 let g:startify_bookmarks = [
             \ '/mnt/d/Google Drive/personal_wiki/README.md',
-            \ '/etc/apt/sources.list',
-            \ '/mnt/d/Google Drive/Projects/wqu',
+            \ '/mnt/d/Google_Drive/Projects/Finance/wqu/README.md',
             \ '/mnt/d/Google_Drive/Projects/Reservoir/geostatistic/README.md',
-            \ '/mnt/d/Google_Drive/Projects/Setup/wsl_dev_env',
+            \ '/mnt/d/Google_Drive/Projects/Setup/wsl_dev_env/README.md',
+            \ '/etc/apt/sources.list',
             \ ]
-            " \ { 'i': '~/.config/nvim/init.vim' },
-            " \ { 'z': '~/.zshrc' },
 let g:startify_enable_special = 0
