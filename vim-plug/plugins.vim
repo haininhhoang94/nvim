@@ -37,7 +37,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         " auto set indent setting
         Plug 'tpope/vim-sleuth'
         " Better Syntax Support
-        " Plug 'nvim-treesitter/nvim-treesitter'
         Plug 'sheerun/vim-polyglot'
         " Treesitter
         Plug 'nvim-treesitter/nvim-treesitter'
@@ -50,7 +49,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         " Closetags
         Plug 'alvan/vim-closetag'
         " Themes
-        Plug 'christianchiarulli/nvcode-color-schemes.vim'
+        Plug 'haininhhoang94/nvcode-color-schemes.vim'
         " Intellisense
         Plug 'neoclide/coc.nvim', {'branch': 'release'}
         " Status Line
