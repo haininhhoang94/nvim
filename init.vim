@@ -52,10 +52,10 @@ else
   source $HOME/.config/nvim/plug-config/bracey.vim
   source $HOME/.config/nvim/plug-config/asynctask.vim
   source $HOME/.config/nvim/plug-config/window-swap.vim
-  source $HOME/.config/nvim/plug-config/markdown-preview.vim
-  source $HOME/.config/nvim/plug-config/markdown-img-paste.vim
+  source $HOME/.config/nvim/plug-config/jsonc.vim
   source $HOME/.config/nvim/plug-config/neovide.vim
   luafile $HOME/.config/nvim/lua/plug-colorizer.lua
+  " Graveyard
   " source $HOME/.config/nvim/plug-config/semshi.vim
   " source $HOME/.config/nvim/plug-config/vimspector.vim " Uncomment if you want to use Vimspector
   " source $HOME/.config/nvim/plug-config/ale.vim
@@ -70,6 +70,8 @@ else
   " source $HOME/.config/nvim/plug-config/xtabline.vim
   " source $HOME/.config/nvim/plug-config/illuminate.vim
   " source $HOME/.config/nvim/plug-config/sneak.vim
+  " source $HOME/.config/nvim/plug-config/markdown-preview.vim
+  " source $HOME/.config/nvim/plug-config/markdown-img-paste.vim
 endif
 source $HOME/.config/nvim/plug-config/quickscope.vim
 

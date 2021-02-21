@@ -14,8 +14,8 @@ if exists('g:vscode')
     nmap <Tab> :Tabnext <CR>
     nmap <S-TAB> :Tabprev <CR>
 else
-    " Refresh source init.vim
-    nmap <leader>rr :so ~/.config/nvim/init.vim<CR>
+    " Tabbing out of brackets and quotes
+    inoremap <expr> <Tab> search('\%#[]>)}''"`]', 'n') ? '<Right>' : '<Tab>'    
 
     " I hate escape more than anything else
     inoremap jk <Esc>

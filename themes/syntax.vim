@@ -10,3 +10,9 @@
 " au BufNewFile,BufRead *.py 
       " \ set foldmethod=indent
       " \ set textwidth=79
+
+" autocmd BufNew, BufNewFile, BufRead *.json :setfiletype jsonc
+
+" au! BufNew, BufNewFile, BufRead *.json, *.md :set shiftwidth=2
+au BufNewFile, BufRead *.md 
+    \ set tabstop=2

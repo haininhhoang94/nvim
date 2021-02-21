@@ -102,10 +102,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'skywind3000/asyncrun.vim'
         " Swap windows
         Plug 'wesQ3/vim-windowswap'
-        " Markdown Preview
-        Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
-        " Markdown Image Paste
-        Plug 'ferrine/md-img-paste.vim'
         " Easily Create Gists
         Plug 'mattn/vim-gist'
         Plug 'mattn/webapi-vim'
@@ -115,6 +111,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'moll/vim-bbye'
         " Auto refresh
         Plug 'djoshea/vim-autoread'
+        " Set json to jsonc
+        " Plug 'neoclide/jsonc.vim'
+        Plug 'kevinoid/vim-jsonc'
         " Rainbow
         " Plug 'luochen1990/rainbow'
         " Async Linting Engine
@@ -130,6 +129,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         " Plug 'jelera/vim-javascript-syntax'
         " Python jupyter
         " Plug 'goerz/jupytext.vim'
+        " " Markdown Preview
+        " Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
+        " " Markdown Image Paste
+        " Plug 'ferrine/md-img-paste.vim'
 
         " Plugin Graveyard
 
