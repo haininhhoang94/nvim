@@ -22,7 +22,7 @@ installnodearch() { \
 installnode() { \
   echo "Installing node..."
   [ "$(uname)" == "Darwin" ] && installnodemac
-  [  -n "$(uname -a | grep Linux)" ] && installnodeubuntu
+  [  -n "$(uname -a | grep Ubuntu)" ] && installnodeubuntu
   [ -f "/etc/arch-release" ] && installnodearch
   [ "$(expr substr $(uname -s) 1 10)" == "MINGW64_NT" ] && echo "Windows not currently supported"
   sudo npm i -g neovim
@@ -45,7 +45,7 @@ installpiponarch() { \
 installpip() { \
   echo "Installing pip..."
   [ "$(uname)" == "Darwin" ] && installpiponmac
-  [  -n "$(uname -a | grep Linux)" ] && installpiponubuntu
+  [  -n "$(uname -a | grep Ubuntu)" ] && installpiponubuntu
   [ -f "/etc/arch-release" ] && installpiponarch
   [ "$(expr substr $(uname -s) 1 10)" == "MINGW64_NT" ] && echo "Windows not currently supported"
 }
@@ -65,20 +65,20 @@ installcocextensions() { \
   sudo npm install coc-explorer coc-snippets coc-json coc-actions --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
 }
 
-# cloneconfig() { \
-#   echo "Cloning Nvim Mach 2 configuration"
-#   git clone https://github.com/ChristianChiarulli/nvim.git ~/.config/nvim
-# }
+cloneconfig() { \
+  echo "Cloning Nvim Mach 2 configuration"
+  git clone https://github.com/ChristianChiarulli/nvim.git ~/.config/nvim
+}
 
-# moveoldnvim() { \
-#   echo "Moving your config to nvim.old"
-#   mv $HOME/.config/nvim $HOME/.config/nvim.old
-# }
+moveoldnvim() { \
+  echo "Moving your config to nvim.old"
+  mv $HOME/.config/nvim $HOME/.config/nvim.old
+}
 
-# moveoldcoc() { \
-#   echo "Moving your coc to coc.old"
-#   mv $HOME/.config/coc $HOME/.config/coc.old
-# }
+moveoldcoc() { \
+  echo "Moving your coc to coc.old"
+  mv $HOME/.config/coc $HOME/.config/coc.old
+}
 
 installplugins() { \
   mv $HOME/.config/nvim/init.vim $HOME/.config/nvim/init.vim.tmp
@@ -129,7 +129,7 @@ installonarch() { \
 
 installextrapackages() { \
   [ "$(uname)" == "Darwin" ] && installonmac
-  [  -n "$(uname -a | grep Linux)" ] && installonubuntu
+  [  -n "$(uname -a | grep Ubuntu)" ] && installonubuntu
   [ -f "/etc/arch-release" ] && installonarch
   [ "$(expr substr $(uname -s) 1 10)" == "MINGW64_NT" ] && echo "Windows not currently supported"
 }
@@ -148,13 +148,13 @@ which node > /dev/null && echo "node installed, moving on..." || asktoinstallnod
 pip3 list | grep pynvim > /dev/null && echo "pynvim installed, moving on..." || installpynvim
 
 # move old nvim directory if it exists
-# [ -d "$HOME/.config/nvim" ] && moveoldnvim
+[ -d "$HOME/.config/nvim" ] && moveoldnvim
 
 # move old nvim directory if it exists
-# [ -d "$HOME/.config/coc" ] && moveoldcoc
+[ -d "$HOME/.config/coc" ] && moveoldcoc
 
 # clone config down
-# cloneconfig
+cloneconfig
 
 # echo "Nvim Mach 2 is better with at least ripgrep, ueberzug and ranger"
 # echo -n "Would you like to install these now?  (y/n)? "
