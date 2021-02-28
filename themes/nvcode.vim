@@ -9,7 +9,8 @@
 " UnderlinedIt belongs to any underlined text.
 " ErrorIt belongs to any source code error
 
-hi Comment cterm=italic guifg=#7F7663
+hi Comment cterm=italic
+" hi Comment cterm=italic guifg=#7F7663
 hi Statement cterm=italic
 hi PreProc cterm=italic
 let g:nvcode_termcolors=256

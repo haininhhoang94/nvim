@@ -9,6 +9,10 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
+" Experimental
+" Ctrl+ J when split a line
+nnoremap <NL> i<CR><ESC>
+
 if exists('g:vscode')
     " Simulate same TAB behavior in VSCode
     nmap <Tab> :Tabnext <CR>
@@ -60,6 +64,7 @@ else
     nnoremap <silent> <M-k>     :resize +2 <CR>
     nnoremap <silent> <M-h>     :vertical resize -2 <CR>
     nnoremap <silent> <M-l>     :vertical resize +2 <CR>
+
 endif
 
 " Better nav for omnicomplete
