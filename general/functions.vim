@@ -2,9 +2,9 @@
 
 " Turn spellcheck on for markdown files, and turn on indent
 augroup auto_spellcheck
-  autocmd BufNewFile,BufRead *.md setlocal spell
-  autocmd BufNewFile,BufRead *.md setlocal tabstop=2
-  autocmd BufNewFile,BufRead *.md setlocal shiftwidth=2
+  " autocmd BufNewFile,BufRead *.md setlocal spell
+  autocmd BufNewFile,BufRead *.md set tabstop=2
+  autocmd BufNewFile,BufRead *.md set shiftwidth=2
 
 nnoremap <f10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
 \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
@@ -23,13 +23,13 @@ function! Light()
 endfunction
 
 " WSL yank support
-let s:clip = '/mnt/c/Windows/System32/clip.exe'  " change this path according to your mount point
-if executable(s:clip)
-    augroup WSLYank
-        autocmd!
-        autocmd TextYankPost * if v:event.operator ==# 'y' | call system('cat |' . s:clip, @0) | endif
-    augroup END
-endif
+" let s:clip = '/mnt/c/Windows/System32/clip.exe'  " change this path according to your mount point
+" if executable(s:clip)
+"     augroup WSLYank
+"         autocmd!
+"         autocmd TextYankPost * if v:event.operator ==# 'y' | call system('cat |' . s:clip, @0) | endif
+"     augroup END
+" endif
 
 " If one has a particular extension that one uses for binary files (such as exe,
 " bin, etc), you may find it helpful to automate the process with the following

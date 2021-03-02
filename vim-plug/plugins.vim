@@ -130,7 +130,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         " Python jupyter
         " Plug 'goerz/jupytext.vim'
         " " Markdown Preview
-        " Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
+        Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
         " " Markdown Image Paste
         " Plug 'ferrine/md-img-paste.vim'
 

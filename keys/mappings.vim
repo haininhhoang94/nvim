@@ -11,7 +11,7 @@ noremap <Right> <NOP>
 
 " Experimental
 " Ctrl+ J when split a line
-nnoremap <NL> i<CR><ESC>
+" nnoremap <NL> i<CR><ESC>
 
 if exists('g:vscode')
     " Simulate same TAB behavior in VSCode
@@ -30,9 +30,9 @@ else
     " SHIFT-TAB will go back
     nnoremap <silent> <S-TAB> :bprevious<CR>
 
-    " Insert newline without entering insert mode
-    nmap <C-o> O<Esc>
-    nmap <CR> o<Esc>
+    " " Insert newline without entering insert mode
+    " nmap <C-o> O<Esc>
+    " nmap <CR> o<Esc>
 
     " Alternative way to save
     nnoremap <silent> <C-s> :w<CR>
