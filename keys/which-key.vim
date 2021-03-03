@@ -44,7 +44,8 @@ let g:which_key_map['T'] = [ ':TSHighlightCapturesUnderCursor'    , 'treesitter 
 let g:which_key_map['u'] = [ ':UndotreeToggle'              , 'undo tree']
 let g:which_key_map['v'] = [ '<C-W>v'                       , 'split right']
 let g:which_key_map['W'] = [ ':call WindowSwap#EasyWindowSwap()'  , 'move window'  ]
-let g:which_key_map['y'] = [ ':call Sync()'                         , 'Sync...' ]
+let g:which_key_map['y'] = [ ':call SyncNeovimConfig()'                         , 'Sync...' ]
+let g:which_key_map['Y'] = [ ':call SyncDotfilesConfig()'                         , 'Sync...' ]
 let g:which_key_map['z'] = [ 'Goyo'                         , 'zen' ]
 
 " Group mappings

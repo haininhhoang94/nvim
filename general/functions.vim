@@ -17,14 +17,19 @@ nnoremap <f10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> 
 " endfunction
 
 " Change color scheme to light (Papercolor)
-function! Light()
-  :colorscheme PaperColor
-  :set background=light
+" function! Light()
+"   :colorscheme PaperColor
+"   :set background=light
+" endfunction
+
+function! SyncNeovimConfig()
+  :!cd ~/.config/nvim && git add . && git commit -m "updates" && git push
+  :echomsg "Status: Sync Neovim Successful"
 endfunction
 
-function! Sync()
-  " :!echo "Hello world"
-  :!cd ~/.config/nvim && git add . && git commit -m "updates" && git push
+function! SyncDotfilesConfig()
+  :!cd ~ && dotfiles add -u && dotfiles commit -m "updates" && dotfiles push
+  :echomsg "Status: Sync Dotfiles Successful"
 endfunction
 
 " WSL yank support
