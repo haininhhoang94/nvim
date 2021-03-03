@@ -3,23 +3,28 @@
 " Turn spellcheck on for markdown files, and turn on indent
 augroup auto_spellcheck
   " autocmd BufNewFile,BufRead *.md setlocal spell
-  autocmd BufNewFile,BufRead *.md set tabstop=2
-  autocmd BufNewFile,BufRead *.md set shiftwidth=2
+  autocmd BufNewFile,BufRead *.md, *.vim setlocal tabstop=2
+  autocmd BufNewFile,BufRead *.md, *.vim setlocal shiftwidth=2
 
 nnoremap <f10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
 \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
 \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<cr>
 
 " SuperSplitView
-function! VimuxVerticalPer()
-  :let g:VimuxOrientation = "h"
-  :call VimuxPromptCommand()
-endfunction
+" function! VimuxVerticalPer()
+"   :let g:VimuxOrientation = "h"
+"   :call VimuxPromptCommand()
+" endfunction
 
 " Change color scheme to light (Papercolor)
 function! Light()
   :colorscheme PaperColor
   :set background=light
+endfunction
+
+function! Sync()
+  " :!echo "Hello world"
+  :!cd ~/.config/nvim && git add . && git commit -m "updates" && git push
 endfunction
 
 " WSL yank support

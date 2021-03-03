@@ -19,7 +19,7 @@ if exists('g:vscode')
     nmap <S-TAB> :Tabprev <CR>
 else
     " Tabbing out of brackets and quotes
-    inoremap <expr> <Tab> search('\%#[]>)}''"`]', 'n') ? '<Right>' : '<Tab>'    
+    " inoremap <expr> <Tab> search('\%#[]>)}''"`]', 'n') ? '<Right>' : '<Tab>'    
 
     " I hate escape more than anything else
     inoremap jk <Esc>

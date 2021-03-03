@@ -183,7 +183,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         " Plug 'NLKNguyen/papercolor-theme'
         " Plug 'morhetz/gruvbox'
         " Plug 'phanviet/vim-monokai-pro'
-      endif
+     endif
 
 "Add Plug end here
 call plug#end()
