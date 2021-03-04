@@ -102,6 +102,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'skywind3000/asyncrun.vim'
         " Swap windows
         Plug 'wesQ3/vim-windowswap'
+        " Markdown Preview
+        Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
         " Easily Create Gists
         Plug 'mattn/vim-gist'
         Plug 'mattn/webapi-vim'
@@ -129,8 +131,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         " Plug 'jelera/vim-javascript-syntax'
         " Python jupyter
         " Plug 'goerz/jupytext.vim'
-        " " Markdown Preview
-        Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
+        " Neovim in Browser
+        Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(1) } }
         " " Markdown Image Paste
         " Plug 'ferrine/md-img-paste.vim'
 
