@@ -116,6 +116,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         " Set json to jsonc
         " Plug 'neoclide/jsonc.vim'
         Plug 'kevinoid/vim-jsonc'
+        " Disable the usage of micro moving
+        Plug 'takac/vim-hardtime'
         " Rainbow
         " Plug 'luochen1990/rainbow'
         " Async Linting Engine

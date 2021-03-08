@@ -86,7 +86,7 @@ let g:which_key_map.a = {
       \ 'name' : '+actions' ,
       \ 'c' : [':ColorizerToggle'        , 'colorizer'],
       \ 'e' : [':CocCommand explorer'    , 'explorer'],
-      \ 'h' : [':let @/ = ""'            , 'remove search highlight'],
+      \ 'h' : [':HardTimeToggle'            , 'HardTimeToggle'],
       \ 'l' : [':Bracey'                 , 'start live server'],
       \ 'L' : [':BraceyStop'             , 'stop live server'],
       \ 'm' : [':MarkdownPreview'        , 'markdown preview'],
@@ -101,6 +101,7 @@ let g:which_key_map.a = {
       \ 'P' : [':cd %:h'                 , 'set current path'],
       \ 'q' : [':set list!'              , 'toggle dot space'],
       \ }
+      " \ 'h' : [':let @/ = ""'            , 'remove search highlight'],
 
 " p -> finding files (to be alike with my vscode config)
 " let g:which_key_map.p = {
