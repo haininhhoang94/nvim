@@ -29,8 +29,8 @@ nmap <silent> S <Plug>(easymotion-overwin-f2)
 " nmap <Leader>l <Plug>(easymotion-overwin-line)
 
 " " Move to word
-map  <Leader>w <Plug>(easymotion-bd-w)
-nmap <Leader>w <Plug>(easymotion-overwin-w)
+map  <Leader><Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader><Leader>w <Plug>(easymotion-overwin-w)
 
 " hi link EasyMotionTarget ErrorMsg
 " hi link EasyMotionShade  Comment
