@@ -48,6 +48,10 @@ set list
 set guifont=Fira\ Code\ Nerd\ Font
 
 " New stuff
+" Integrate zz into moving motion
+nmap L Lzz                    
+nmap H Hzz                    
+nmap G Gzz                    
 " set notimeout nottimeout
 " set scrolloff=1
 " set sidescroll=1
