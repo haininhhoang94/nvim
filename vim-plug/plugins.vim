@@ -20,6 +20,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'suy/vim-context-commentstring'
     " highlight all matches under cursor
     Plug 'RRethy/vim-illuminate'
+    " Disable the usage of micro moving
+    Plug 'takac/vim-hardtime'
 
     if exists('g:vscode')
         " Easy motion for VSCode
@@ -116,8 +118,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         " Set json to jsonc
         " Plug 'neoclide/jsonc.vim'
         Plug 'kevinoid/vim-jsonc'
-        " Disable the usage of micro moving
-        Plug 'takac/vim-hardtime'
         " Rainbow
         " Plug 'luochen1990/rainbow'
         " Async Linting Engine
