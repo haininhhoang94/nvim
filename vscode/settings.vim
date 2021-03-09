@@ -121,6 +121,20 @@ nmap gcc <Plug>VSCodeCommentaryLine
 nmap gf <Cmd>call VSCodeNotify('seito-openfile.openFileFromText')<CR>
 
 " Integrate zz into moving motion
-nmap L L<Cmd>call VSCodeNotify('center-editor-window.center')<CR>
-nmap H H<Cmd>call VSCodeNotify('center-editor-window.center')<CR>
-nmap G G<Cmd>call VSCodeNotify('center-editor-window.center')<CR>
+nmap L L
+nmap H H
+nmap G G
+" unmap z
+" nnoremap <silent> z<CR> :<C-u>call <SID>reveal('top', 1, 0)<CR>
+" xnoremap <silent> z<CR> :<C-u>call <SID>reveal('top', 1, 1)<CR> 
+" nnoremap <silent> zt :<C-u>call <SID>reveal('top', 0, 0)<CR> 
+" xnoremap <silent> zt :<C-u>call <SID>reveal('top', 0, 1)<CR> 
+" nnoremap <silent> z. :<C-u>call <SID>reveal('center', 1, 0)<CR> 
+" xnoremap <silent> z. :<C-u>call <SID>reveal('center', 1, 1)<CR> 
+" nnoremap <silent> zz :<C-u>call <SID>reveal('center', 0, 0)<CR> 
+" xnoremap <silent> zz :<C-u>call <SID>reveal('center', 0, 1)<CR> 
+" nnoremap <silent> z- :<C-u>call <SID>reveal('bottom', 1, 0)<CR> 
+" xnoremap <silent> z- :<C-u>call <SID>reveal('bottom', 1, 1)<CR> 
+" nnoremap <silent> zb :<C-u>call <SID>reveal('bottom', 0, 0)<CR> 
+" xnoremap <silent> zb :<C-u>call <SID>reveal('bottom', 0, 1)<CR> 
+
