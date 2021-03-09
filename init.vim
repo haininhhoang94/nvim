@@ -13,7 +13,6 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/general/functions.vim
 source $HOME/.config/nvim/keys/mappings.vim
-source $HOME/.config/nvim/plug-config/hardtime.vim
 
 " Source depending on if VSCode is our client
 if exists('g:vscode')
@@ -25,7 +24,7 @@ else
   " Themes
   source $HOME/.config/nvim/themes/syntax.vim
   source $HOME/.config/nvim/themes/nvcode.vim
-
+  source $HOME/.config/nvim/plug-config/hardtime.vim
 
   " Plugin configuration
   source $HOME/.config/nvim/keys/which-key.vim

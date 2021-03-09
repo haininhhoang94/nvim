@@ -20,6 +20,8 @@ let g:EasyMotion_do_shade = 1
 " s{char}{char} to move to {char}{char}
 nmap <silent> s <Plug>(easymotion-s2)
 nmap <silent> S <Plug>(easymotion-overwin-f2)
+nmap <Leader><Leader> s <Plug>(easymotion-s2)
+nmap <Leader><Leader>  S <Plug>(easymotion-overwin-f2)
 " map  n <Plug>(easymotion-next)
 " map  N <Plug>(easymotion-prev)
 " nmap S <Plug>(easymotion-overwin-t)
@@ -29,8 +31,8 @@ nmap <silent> S <Plug>(easymotion-overwin-f2)
 " nmap <Leader>l <Plug>(easymotion-overwin-line)
 
 " " Move to word
-map  <Leader><Leader>w <Plug>(easymotion-bd-w)
-nmap <Leader><Leader>w <Plug>(easymotion-overwin-w)
+map  <Leader><Leader> w <Plug>(easymotion-bd-w)
+nmap <Leader><Leader> W <Plug>(easymotion-overwin-w)
 
 " hi link EasyMotionTarget ErrorMsg
 " hi link EasyMotionShade  Comment

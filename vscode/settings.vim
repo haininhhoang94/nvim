@@ -138,3 +138,6 @@ nmap G G
 " nnoremap <silent> zb :<C-u>call <SID>reveal('bottom', 0, 0)<CR> 
 " xnoremap <silent> zb :<C-u>call <SID>reveal('bottom', 0, 1)<CR> 
 
+" nmap L L<Cmd>call VSCodeNotify('center-editor-window.center')<CR>
+" nmap H H<Cmd>call VSCodeNotify('center-editor-window.center')<CR>
+" nmap G G<Cmd>call VSCodeNotify('center-editor-window.center')<CR>
