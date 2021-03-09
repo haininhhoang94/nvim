@@ -121,6 +121,6 @@ nmap gcc <Plug>VSCodeCommentaryLine
 nmap gf <Cmd>call VSCodeNotify('seito-openfile.openFileFromText')<CR>
 
 " Integrate zz into moving motion
-nmap L L<Cmd>call VSCodeNotify('center-editor-window.center')<CR>
-nmap H H<Cmd>call VSCodeNotify('center-editor-window.center')<CR>
-nmap G G<Cmd>call VSCodeNotify('center-editor-window.center')<CR>
+" nmap L L<Cmd>call VSCodeNotify('center-editor-window.center')<CR>
+" nmap H H<Cmd>call VSCodeNotify('center-editor-window.center')<CR>
+" nmap G G<Cmd>call VSCodeNotify('center-editor-window.center')<CR>
