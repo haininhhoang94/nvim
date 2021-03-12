@@ -24,7 +24,6 @@ else
   " Themes
   source $HOME/.config/nvim/themes/syntax.vim
   source $HOME/.config/nvim/themes/nvcode.vim
-  source $HOME/.config/nvim/plug-config/hardtime.vim
 
   " Plugin configuration
   source $HOME/.config/nvim/keys/which-key.vim
@@ -73,6 +72,7 @@ else
   " source $HOME/.config/nvim/plug-config/illuminate.vim
   " source $HOME/.config/nvim/plug-config/sneak.vim
   " source $HOME/.config/nvim/plug-config/markdown-img-paste.vim
+  " source $HOME/.config/nvim/plug-config/hardtime.vim
 endif
 source $HOME/.config/nvim/plug-config/quickscope.vim
 
