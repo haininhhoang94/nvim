@@ -2,9 +2,12 @@
 
 " Turn spellcheck on for markdown files, and turn on indent
 augroup auto_spellcheck
-  autocmd BufNewFile,BufRead *.md setlocal spell
+  " autocmd BufNewFile,BufRead *.md setlocal spell
   " autocmd BufNewFile,BufRead *.md setlocal tabstop=2
   " autocmd BufNewFile,BufRead *.md setlocal shiftwidth=2
+
+" Fold syntax on json
+  autocmd BufNewFile, BufRead *.json setlocal foldmethod=syntax
 
 nnoremap <f10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
 \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
