@@ -28,6 +28,10 @@ if exists('g:vscode')
   " Simulate same TAB behavior in VSCode
   nmap <Tab> :Tabnext <CR>
   nmap <S-TAB> :Tabprev <CR>
+  " nnoremap j :call VSCodeCall('cursorDown') <CR>
+  " nnoremap k :call VSCodeCall('cursorUp') <CR>
+  " nmap j gj
+  " nmap k gk
 else
   " Better nav for omnicomplete
   inoremap <expr> <c-j> ("\C-n><")
