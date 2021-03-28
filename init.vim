@@ -53,6 +53,7 @@ else
   source $HOME/.config/nvim/plug-config/window-swap.vim
   source $HOME/.config/nvim/plug-config/jsonc.vim
   source $HOME/.config/nvim/plug-config/markdown-preview.vim
+  source $HOME/.config/nvim/plug-config/livepreview-latex.vim
   source $HOME/.config/nvim/plug-config/neovide.vim
   source $HOME/.config/nvim/plug-config/hardtime.vim
   luafile $HOME/.config/nvim/lua/plug-colorizer.lua

@@ -203,7 +203,23 @@
   },
 
   //coc-emoji
-  "coc.source.emoji.filetypes": ["markdown"]
+  "coc.source.emoji.filetypes": [
+    "markdown"
+  ],
+  "cSpell.userWords": [
+    "Rnvimr",
+    "bracey",
+    "codi",
+    "floaterm",
+    "goyo",
+    "jupytext",
+    "nvcode",
+    "nvcodeline",
+    "pyshell",
+    "semshi",
+    "vimux",
+    "xtabline"
+  ]
 
   // TODO b:coc_suggest_disable=1 GOYO
   // TODO add to paths.vim g:coc_node_path

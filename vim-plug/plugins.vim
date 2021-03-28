@@ -137,6 +137,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(1) } }
         " " Markdown Image Paste
         " Plug 'ferrine/md-img-paste.vim'
+        " Latex 
+        Plug 'lervag/vimtex'
+        Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
         " Plugin Graveyard
 
