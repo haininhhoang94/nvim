@@ -56,6 +56,7 @@ else
   source $HOME/.config/nvim/plug-config/livepreview-latex.vim
   source $HOME/.config/nvim/plug-config/neovide.vim
   source $HOME/.config/nvim/plug-config/hardtime.vim
+  source $HOME/.config/nvim/plug-config/iawriter.vim
   luafile $HOME/.config/nvim/lua/plug-colorizer.lua
   " Graveyard
   " source $HOME/.config/nvim/plug-config/semshi.vim

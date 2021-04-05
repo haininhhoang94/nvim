@@ -2,7 +2,8 @@
 
 " Turn spellcheck on for markdown files, and turn on indent
 augroup auto_spellcheck
-  " autocmd BufNewFile,BufRead *.md setlocal spell
+  autocmd BufNewFile,BufRead *.md colorscheme pencil
+  autocmd BufNewFile,BufRead *.md setlocal background=light
   " autocmd BufNewFile,BufRead *.md setlocal tabstop=2
   " autocmd BufNewFile,BufRead *.md setlocal shiftwidth=2
 

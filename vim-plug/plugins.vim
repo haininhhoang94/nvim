@@ -134,13 +134,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         " Python jupyter
         " Plug 'goerz/jupytext.vim'
         " Neovim in Browser
-        Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(1) } }
+        " Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(1) } }
         " " Markdown Image Paste
         " Plug 'ferrine/md-img-paste.vim'
         " Latex 
-        Plug 'lervag/vimtex'
-        Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
-
+        " Plug 'lervag/vimtex'
+        " Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+        " IaWriter
+        Plug 'junegunn/limelight.vim', {'for': 'markdown'}
+        Plug 'reedes/vim-colors-pencil', {'for': 'markdown'}
+        Plug 'subnut/vim-iawriter', {'for': 'markdown'}
         " Plugin Graveyard
 
         " Debug
