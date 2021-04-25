@@ -2,7 +2,15 @@ set iskeyword+=-                                                                
 
 set formatoptions-=cro                                                          " Stop newline continution of comments
 " let g:python3_host_prog = expand('$HOME/anaconda3/envs/pyds/bin/python3.8')     " Python location
-let g:python3_host_prog = expand('$HOME/miniforge3/envs/pyds_arm/bin/python3.8')     " Python location
+if has("unix")
+  let s:uname = system("uname -s")
+  if s:uname == "Darwin"
+    " Do Mac stuff here
+    let g:python3_host_prog = expand('$HOME/miniforge3/envs/pyds_arm/bin/python3.8')     " Python location
+  endif
+else
+  let g:python3_host_prog = expand('$HOME/miniconda3/envs/pyds/bin/python3.8')
+endif
 
 syntax enable               " Enables syntax highlighting
 set hidden                  " Required to keep multiple buffers open multiple buffers
