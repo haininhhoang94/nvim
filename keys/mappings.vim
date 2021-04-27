@@ -28,6 +28,9 @@ if exists('g:vscode')
   " Simulate same TAB behavior in VSCode
   nmap <Tab> :Tabnext <CR>
   nmap <S-TAB> :Tabprev <CR>
+  " Insert newline without entering insert mode
+  nmap <C-o> O<Esc>
+  nmap <CR> o<Esc>
   " nnoremap j :call VSCodeCall('cursorDown') <CR>
   " nnoremap k :call VSCodeCall('cursorUp') <CR>
   " nmap j gj
