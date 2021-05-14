@@ -54,7 +54,7 @@ let g:which_key_map['z'] = [ 'Goyo'                         , 'zen' ]
 " . is for dotfiles
 let g:which_key_map['.'] = {      
       \ 'name' : 'open setting' ,
-      \ '.' : [ ':e $MYVIMRC'               , 'Neovim Setting' ],
+      \ '.' : [ ':e ~/.config/nvim/init.vim'               , 'Neovim Setting' ],
       \ 'a' : [ ':e ~/.aliases'               , 'Aliases' ],
       \ 'c' : [ ':e ~/.environment-pyds.yml'          , 'Conda Environment Setting'],
       \ 'C' : [ ':e ~/.code-shell'          , 'VSCode Shell Setting'],
@@ -62,6 +62,7 @@ let g:which_key_map['.'] = {
       \ 't' : [ ':e ~/.tmux.conf'               , 'Tmux Setting'],
       \ 'z' : [ ':e ~/.zshrc'               , 'ZSH Setting'],
       \ }
+      " \ '.' : [ ':e $MYVIMRC'               , 'Neovim Setting' ],
       " \ 'w' : [ ':e $HOME_WINDOWS/AppData/Local/nvim/init.vim' , 'Neovim Windows Setting'],
       " \ 'W' : [ ':e $HOME_WINDOWS/AppData/Local/Pack' , 'Windows Terminal Setting'],
 " c is for Codi
@@ -100,7 +101,7 @@ let g:which_key_map.a = {
       \ 'R' : [':set norelativenumber!'  , 'relative line nums'],
       \ 'w' : [':StripWhitespace'        , 'strip whitespace'],
       \ 'p' : [':set paste!'             , 'toggle paste mode'],
-      \ 'P' : [':cd %:h'                 , 'set current path'],
+      \ 'P' : [':cd %:p:h'                 , 'set current path'],
       \ 'q' : [':set list!'              , 'toggle dot space'],
       \ }
       " \ 't' : [':FloatermToggle'         , 'terminal'],
