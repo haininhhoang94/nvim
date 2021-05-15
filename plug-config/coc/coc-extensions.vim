@@ -31,8 +31,8 @@ let g:coc_global_extensions = [
     \ 'coc-calc',
     \ 'coc-omnisharp',
     \ 'coc-vimtex',
-    \ 'coc-spell-checker'
     \ ]
+    " \ 'coc-spell-checker'
     " \ 'coc-tabnine',
     " \ 'coc-highlight',
     " \ 'coc-python',
