@@ -1,5 +1,5 @@
-set guifont=FiraCode\ NF:h16
-" set guifont=Hack\ Nerd\ Font:h22
+" set guifont=FiraCode\ NF:h16
+set guifont=Hack\ Nerd\ Font:h14
 " set guifont=Noto\ Color\ Emoji:h22
 
 let g:neovide_refresh_rate=60

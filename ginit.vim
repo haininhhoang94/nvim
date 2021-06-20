@@ -7,18 +7,18 @@
 
 " General Settings
 if exists('g:fvim_loaded')
-    set guifont=Fira\ Code:h14
+    set guifont=FiraCode\ Nerd\ Font:h14
     " Ctrl-ScrollWheel for zooming in/out
     nnoremap <silent> <C-ScrollWheelUp> :set guifont=+<CR>
     nnoremap <silent> <C-ScrollWheelDown> :set guifont=-<CR>
     nnoremap <A-CR> :FVimToggleFullScreen<CR>
-    FVimDrawFPS v:true
-    FVimCursorSmoothMove v:true
-    FVimCursorSmoothBlink v:true
-    FVimFontAntialias v:true
-    FVimFontAutohint v:true
-    FVimFontHintLevel 'full'
-    FVimFontLigature v:true
-    FVimFontSubpixel v:true
-    FVimFontAutoSnap v:true
+    " FVimDrawFPS v:true
+    " FVimCursorSmoothMove v:true
+    " FVimCursorSmoothBlink v:true
+    " FVimFontAntialias v:true
+    " FVimFontAutohint v:true
+    " FVimFontHintLevel 'full'
+    " FVimFontLigature v:true
+    " FVimFontSubpixel v:true
+    " FVimFontAutoSnap v:true
 endif
